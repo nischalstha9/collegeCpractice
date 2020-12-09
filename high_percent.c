@@ -2,7 +2,7 @@
 int main()
 {
     printf("WAP to find percentage of 5 students having 5 sub and find highest among them\n");
-    float percentage=0, math, eng, sci, nep, com, i, initial;
+    float percentage=0, math, eng, sci, nep, com, i, initial, lowest=0, highest=0;
     for(i=0; i<5; i++){
         printf("Enter mark in maths:\n");
         scanf("%f", &math);
@@ -16,8 +16,10 @@ int main()
         scanf("%f", &com);
         initial = (math+eng+sci+nep+com)*0.2;
         printf("\n===\nPercentage is %.2f\n===", initial);
-        percentage = initial>percentage?initial:percentage;
+        lowest = (lowest == 0 || initial<lowest)?initial:lowest;
+        highest = initial>highest?initial:highest;
     }
-    printf("The highest percentage is %.2f", percentage);
+    printf("The highest percentage is %.2f\n", highest);
+    printf("The lowest percentage is %.2f", lowest);
     return 0;
 }

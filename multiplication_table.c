@@ -5,7 +5,7 @@ void main(){
 		printf("For which Number You want to generate Table?\n");
 		scanf("%d", &a);
 		for (i = 1; i<=10; i++){
-			printf("%d * %d = %d\n", a,i,a*i );
+			printf("%d X %d = %d\n", a,i,a*i );
 		};
 	};
 	
@@ -19,9 +19,10 @@ void main(){
 			z = x+y;
 			x = y;
 			y = z;
-			printf("\t%d\t", z);
+			printf("\t%d\n", z);
 		};
 	};
 	fibo();
+	multiple();
 	
 }

@@ -1,5 +1,6 @@
-#include<stdio.h>
-void main(){
+#include <stdio.h>
+void main()
+{
 	char name[40];
 	char address[40];
 	int age;
@@ -21,12 +22,11 @@ void main(){
 	scanf("%s", &email);
 	printf("\n\nYour Id Here:\n");
 	printf("================================================\n");
-	printf("=\tName:\t\t%s\n",name);
-	printf("=\tDOB:\t\t%d/%d/%d\n",day, month, year);
-	printf("=\tAddress:\t%s\n",address);
-	printf("=\tAge:\t\t%d\n",age);
-	printf("=\tPhone:\t\t%lld\n",phone);
-	printf("=\tEmail:\t\t%s\n",email);
+	printf("=\tName:\t\t%s\n", name);
+	printf("=\tDOB:\t\t%d/%d/%d\n", day, month, year);
+	printf("=\tAddress:\t%s\n", address);
+	printf("=\tAge:\t\t%d\n", age);
+	printf("=\tPhone:\t\t%lld\n", phone);
+	printf("=\tEmail:\t\t%s\n", email);
 	printf("================================================\n");
-	
 }

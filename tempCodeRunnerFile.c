@@ -1,14 +1,3 @@
-num*2;
-        while(k!=0)
-        {
-            d4 = k%10; k/=10;
-            d5 = k%10; k/=10;
-            d6 = k%10; k/=10;
-        }
-        k = num*3;
-        while(k!=0)
-        {
-            d7 = k%10; k/=10;
-            d8 = k%10; k/=10;
-            d9 = k%10; k/=10;
-        
+
+        high = marks[i] > high ? marks[i] : high;
+        low = marks[i] < low ? marks

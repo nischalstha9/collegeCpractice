@@ -1,13 +1,13 @@
 #include <stdio.h>
 int main()
 {   
-    int num,k,l,m,n, d1,d2,d3,d4,d5,d6,d7,d8,d9;
+    int num,k,l,m,n,d1,d2,d3,d4,d5,d6,d7,d8,d9;
     for (num = 100; num <=333; num++)
     {
-        k = num;
-        n = num;
-        l = num*2;
-        m = num*3;
+        l = num;
+        m = num*2;
+        n = num*3;
+        k = num;//just made k for easy program
         while (k!=0)
         {   
             d1 = k%10; k/=10;
@@ -32,9 +32,9 @@ int main()
         {
             continue;
         }else{
-            printf("%d\t", n);
             printf("%d\t", l);
-            printf("%d\n", m);
+            printf("%d\t", m);
+            printf("%d\n", n);
         }
             
         
