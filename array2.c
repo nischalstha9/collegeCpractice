@@ -36,7 +36,7 @@
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
-    int odd[] = {}, even[] = {}, num, i;
+    int odd[5] = {}, even[5] = {}, num, i;
     for (i = 0; i < 5; i++)
     {
         printf("enter a number\n");

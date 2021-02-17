@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define size 100
+#define size 5
 int main()
 {
     int i, marks[size], high = 0, low = 99999;
