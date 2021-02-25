@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main()
 {
     long long int binary;
     int number, decimal, power = 0, i, p_calc_val = 1;

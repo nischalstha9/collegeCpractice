@@ -1,1 +1,1 @@
-percent
+email[i] == '@'
