@@ -15,7 +15,7 @@ int main(int argc, char const *argv[])
             betn_count++;
         }
     }
-    printf("The max age is %d min age is %d and count of age betn 35 and 55 is %d", max, min, betn_count);
+    printf("The max age is %d.\nThe min age is %d.\nThe count of age between 35 and 55 is %d.", max, min, betn_count);
 
     return 0;
 }

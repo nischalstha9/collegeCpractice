@@ -1,1 +1,1 @@
-email[i] == '@'
+array2
