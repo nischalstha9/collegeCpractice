@@ -1,23 +1,27 @@
 #include <stdio.h>
-int main(int argc, char const *argv[])
+#include <string.h>
+int main()
 {
     char word[20] = "Sugam Poudel", input[20];
     int wrong = 0, i;
-    printf("Enter given word: ");
-    printf("%s", input);
-    for (i = 0; i < 20; i++)
+    printf("Enter given word:\n");
+    puts(word);
+    gets(input);
+    for (i = 0; word[i] != '\0'; i++)
     {
         if (word[i] != input[i])
-            ;
-        wrong = 1;
+        {
+            printf("%c should be %c\n", input[i], word[i]);
+            wrong++;
+        }
     }
-    if (wrong = 1)
+    if (wrong > 0)
     {
-        printf("Wrong!");
+        printf("Wrong Input! Try Again!! ");
     }
     else
     {
-        printf("Right!");
+        printf("Yay You Typed Right!");
     }
 
     return 0;
