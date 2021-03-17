@@ -1,16 +1,6 @@
 #include <stdio.h>
-#define SIZE 5
-void main()
-{
-    float temps[SIZE];
-    int i;
-    for (i = 0; i < SIZE; i++)
-    {
-        printf("Enter temperature for district %d:\n", i + 1);
-        scanf("%lf", &temps[i]);
-        ascending(temps);
-    }
-}
+#define SIZE 77
+
 void ascending(float temps[SIZE])
 {
     int i, j;
@@ -27,13 +17,14 @@ void ascending(float temps[SIZE])
             }
         }
     }
-    printf("The highest 5 temperature are: \n");
+    printf("The lowest 5 temperature are: \n");
     for (i = 0; i < 5; i++)
     {
-        printf("%d\t", temps[i]);
+        printf("%f\t", temps[i]);
     }
     printf("\n");
 }
+
 void descending(float temps[SIZE])
 {
     int i, j;
@@ -50,10 +41,23 @@ void descending(float temps[SIZE])
             }
         }
     }
-    printf("The lowest 5 temperature are: \n");
+    printf("The highest 5 temperature are: \n");
     for (i = 0; i < 5; i++)
     {
-        printf("%d\t", temps[i]);
+        printf("%f\t", temps[i]);
     }
     printf("\n");
+}
+
+void main()
+{
+    float temps[SIZE];
+    int i;
+    for (i = 0; i < SIZE; i++)
+    {
+        printf("Enter temperature for district %d:\n", i + 1);
+        scanf("%f", &temps[i]);
+    }
+    descending(temps);
+    ascending(temps);
 }

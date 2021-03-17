@@ -17,7 +17,7 @@ int main()
     }
     if (wrong > 0)
     {
-        printf("Wrong Input! Try Again!! ");
+        printf("%d wrong letters! Try Again!! ", wrong);
     }
     else
     {
