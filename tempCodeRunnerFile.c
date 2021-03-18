@@ -1,59 +1,20 @@
-#include <stdio.h>
-#define SIZE 5
-void main()
+int add(int a, int b)
 {
-    float temps[SIZE];
-    int i;
-    for (i = 0; i < SIZE; i++)
-    {
-        printf("Enter temperature for district %d:\n", i + 1);
-        scanf("%lf", &temps[i]);
-        ascending(temps);
-    }
+    return a + b;
 }
-void ascending(float temps[SIZE])
+int sub(int a, int b)
 {
-    int i, j;
-    float cache;
-    for (i = 0; i < 5; i++)
-    {
-        for (j = i + 1; j < 5; j++)
-        {
-            if (temps[j] < temps[i])
-            {
-                cache = temps[j];
-                temps[j] = temps[i];
-                temps[i] = cache;
-            }
-        }
-    }
-    printf("The highest 5 temperature are: \n");
-    for (i = 0; i < 5; i++)
-    {
-        printf("%d\t", temps[i]);
-    }
-    printf("\n");
+    return a - b;
 }
-void descending(float temps[SIZE])
+int mul(int a, int b)
 {
-    int i, j;
-    float cache;
-    for (i = 0; i < 5; i++)
-    {
-        for (j = i + 1; j < 5; j++)
-        {
-            if (temps[j] > temps[i])
-            {
-                cache = temps[j];
-                temps[j] = temps[i];
-                temps[i] = cache;
-            }
-        }
-    }
-    printf("The lowest 5 temperature are: \n");
-    for (i = 0; i < 5; i++)
-    {
-        printf("%d\t", temps[i]);
-    }
-    printf("\n");
+    return a * b;
+}
+int div(int a, int b)
+{
+    return a / b;
+}
+int div(int a, int b)
+{
+    return a % b;
 }
