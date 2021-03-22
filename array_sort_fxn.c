@@ -1,13 +1,13 @@
 #include <stdio.h>
 #define SIZE 77
 
-void ascending(float temps[SIZE])
+void ascending(float temps[])
 {
     int i, j;
     float cache;
-    for (i = 0; i < 5; i++)
+    for (i = 0; i < SIZE; i++)
     {
-        for (j = i + 1; j < 5; j++)
+        for (j = i + 1; j < SIZE; j++)
         {
             if (temps[j] < temps[i])
             {
@@ -20,18 +20,18 @@ void ascending(float temps[SIZE])
     printf("The lowest 5 temperature are: \n");
     for (i = 0; i < 5; i++)
     {
-        printf("%f\t", temps[i]);
+        printf("%.2f\t", temps[i]);
     }
     printf("\n");
 }
 
-void descending(float temps[SIZE])
+void descending(float temps[])
 {
     int i, j;
     float cache;
-    for (i = 0; i < 5; i++)
+    for (i = 0; i < SIZE; i++)
     {
-        for (j = i + 1; j < 5; j++)
+        for (j = i + 1; j < SIZE; j++)
         {
             if (temps[j] > temps[i])
             {
@@ -44,7 +44,7 @@ void descending(float temps[SIZE])
     printf("The highest 5 temperature are: \n");
     for (i = 0; i < 5; i++)
     {
-        printf("%f\t", temps[i]);
+        printf("%.2f\t", temps[i]);
     }
     printf("\n");
 }

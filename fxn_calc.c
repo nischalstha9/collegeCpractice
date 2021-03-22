@@ -22,9 +22,9 @@ int rem(int a, int b)
 void main()
 {
     int a, b;
-    printf("enter a num:");
+    printf("Enter #a:");
     scanf("%d", &a);
-    printf("enter a num:");
+    printf("Enter #b:");
     scanf("%d", &b);
     printf("=> The sum is %d.\n", add(a, b));
     printf("=> The difference is %d.\n", sub(a, b));
