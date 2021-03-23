@@ -81,9 +81,8 @@ int main()
     printf("Value of var using quad pointer = %d\n", ****ptr4);
     printf("Value of var using 5th pointer = %d\n", *****ptr5);
 
-    scanf("%d", &*****ptr5);
+    scanf("%d", &****ptr4);
     printf("%d", var);
     printf("\n%d", *****ptr5);
-    printf("\n%d", ****ptr4);
     return 0;
 }
