@@ -8,7 +8,7 @@ int swap(int *ptr_a, int *ptr_b)
 void main()
 {
     int a = 400, b = 200;
-    printf("a=%d b=%d\n", a, b);
+    printf("Before swapping:\n a=%d b=%d\n", a, b);
     swap(&a, &b);
-    printf("a=%d b=%d\n", a, b);
+    printf("After swapping:\n a=%d b=%d\n", a, b);
 }
