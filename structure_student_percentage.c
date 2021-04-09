@@ -23,7 +23,7 @@ void display(student stu)
 {
     printf("name: %s\n", stu.name);
     printf("roll: %d\n", stu.roll);
-    printf("percentage: %f\n", stu.percentage);
+    printf("percentage: %.2f\n", stu.percentage);
 }
 void sort_by_percentage(student stu[])
 {
@@ -52,7 +52,7 @@ void main()
         printf("Enter detail of student %d:\n", i + 1);
         takeInput(&s[i]);
     }
-    sort_by_percentage(&s);
+    sort_by_percentage(s);
     printf("Sorted by percentage:\n");
     for (i = 0; i < SIZE; i++)
     {
