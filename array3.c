@@ -53,7 +53,7 @@ void high_low_percentage()
 int main()
 {
     // insert_n_display();
-    // sum_of_arr();
+    sum_of_arr();
     // odd_even_count();
     // high_low_percentage();
     return 0;
