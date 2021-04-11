@@ -7,7 +7,6 @@ typedef struct student
     int roll;
     char name[30];
 } student;
-
 void takeInput(student array[])
 {
     int i;
@@ -19,7 +18,6 @@ void takeInput(student array[])
         scanf("%d", &array[i].roll);
     }
 }
-
 void printOutput(student array[])
 {
     int i;
@@ -29,7 +27,6 @@ void printOutput(student array[])
         printf("Roll: %d\n", array[i].roll);
     }
 }
-
 int main(int argc, char const *argv[])
 {
     student s_arr[SIZE];

@@ -49,7 +49,7 @@ void main()
     student s[SIZE];
     for (i = 0; i < SIZE; i++)
     {
-        printf("Enter detail of student %d:\n", i + 1);
+        printf("\nEnter detail of student %d:\n", i + 1);
         takeInput(&s[i]);
     }
     sort_by_percentage(s);

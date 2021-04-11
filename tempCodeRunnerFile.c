@@ -1,27 +1,61 @@
 #include <stdio.h>
-#define ROWS 2
-#define COLS 2
-int main()
+#include <string.h>
+#define SIZE 3
+
+typedef struct student
 {
-    int mat1[ROWS][COLS] = {{1, 2}, {3, 4}}, mat2[ROWS][COLS] = {{5, 6}, {7, 8}}, mul[ROWS][COLS] = {{0, 0}, {0, 0}};
-    int i = 0, j = 0, k = 0;
-    for (i = 0; i < ROWS; ++i)
+    int roll;
+    char name[20];
+    float percentage;
+} student;
+
+void takeInput(student *stu)
+{
+    printf("Enter name of student\n");
+    scanf("%s", stu->name);
+    printf("Enter roll of student\n");
+    scanf("%d", &stu->roll);
+    printf("Enter percentage of student\n");
+    scanf("%f", &stu->percentage);
+}
+
+void display(student stu)
+{
+    printf("name: %s\n", stu.name);
+    printf("roll: %d\n", stu.roll);
+    printf("percentage: %.2f\n", stu.percentage);
+}
+void sort_by_percentage(student stu[])
+{
+    int i, j;
+    student temporary;
+    for (i = 0; i < SIZE; i++)
     {
-        for (j = 0; j < ROWS; ++j)
+        for (j = i + 1; j < SIZE; j++)
         {
-            for (k = 0; k < ROWS; ++k)
+            if (stu[i].percentage > stu[j].percentage)
             {
-                mul[i][j] += mat1[i][k] * mat2[k][j];
+                temporary = stu[i];
+                stu[i] = stu[j];
+                stu[j] = temporary;
             }
         }
     }
-    for (i = 0; i < ROWS; i++)
+}
+
+void main()
+{
+    int i;
+    student s[SIZE];
+    for (i = 0; i < SIZE; i++)
     {
-        for (j = 0; j < ROWS; j++)
-        {
-            printf("%d\t", mul[i][j]);
-        }
-        printf("\n");
+        printf("\nEnter detail of student %d:\n", i + 1);
+        takeInput(&s[i]);
     }
-    return 0;
+    sort_by_percentage(s);
+    printf("Sorted by percentage:\n");
+    for (i = 0; i < SIZE; i++)
+    {
+        display(s[i]);
+    }
 }
