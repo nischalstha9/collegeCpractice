@@ -24,7 +24,7 @@ void isPalindrome(char str[])
 int main()
 {
     isPalindrome("abba");
-    isPalindrome("12321");
+    isPalindrome((char)112);
     isPalindrome("nischal");
     return 0;
 }

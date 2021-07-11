@@ -1,10 +1,10 @@
 #include <stdio.h>
-#define SIZE 5
+#define SIZE 1000
 int main(int argc, char const *argv[])
 {
     FILE *fp;
     double data[SIZE];
-    fp = fopen("E:/NISCHAL/binary.bin", "rb");
+    fp = fopen("D:/Python/Django/NewBlog/db2.sqlite3", "rb");
     if (fp == NULL)
     {
         printf("File not found!");
