@@ -1,3 +1,4 @@
+//WAP in C to convert decimal number to binary, octal and hexadecimal according to user's choice
 #include <stdio.h>
 void convert(int num, int base)
 {
@@ -17,10 +18,10 @@ int main(int argc, char const *argv[])
     int choice;
     while (1)
     {
-        printf("l.Binary\n");
-        printf("2.0ctal\n");
-        printf("3.Hexadecimal\n");
-        printf("4.Exit\n");
+        printf("1. Binary\n");
+        printf("2. 0ctal\n");
+        printf("3. Hexadecimal\n");
+        printf("4. Exit\n");
         printf("Enter your choice ");
         scanf("%d", &choice);
         switch (choice)
