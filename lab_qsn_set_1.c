@@ -74,30 +74,32 @@ void structure()
         printf("Average Mark: %f\n", student_array[i].avg);
     }
 }
-pascal_triangle()
+void pascal_triangle()
 {
-    int size = 5;
-    int i, j, k;
-    for (i = 0; i < size; i++)
+    int rows, coef = 1, space, i, j;
+    printf("Enter the number of rows: ");
+    scanf("%d", &rows);
+    for (i = 0; i < rows; i++)
     {
-        for (k = 0; k < (size - i - 1); k++)
-        {
-            printf(" ");
-        }
-
+        for (space = 1; space <= rows - i; space++)
+            printf("  ");
         for (j = 0; j <= i; j++)
         {
-            printf("* ");
+            if (j == 0 || i == 0)
+                coef = 1;
+            else
+                coef = coef * (i - j + 1) / j;
+            printf("%4d", coef);
         }
         printf("\n");
     }
 }
-add_wout_op()
+void add_wout_op()
 {
     int a = 1, b = 2;
     printf("%d", -(-a - b));
 }
 void main()
 {
-    pryamid();
+    pascal_triangle();
 }
