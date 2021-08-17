@@ -1,8 +1,8 @@
 #include <stdio.h>
 void main()
 {
-	// fibo();
 	multiple();
+	// fibo();
 }
 int multiple()
 {
@@ -14,14 +14,16 @@ int multiple()
 		printf("%d X %d = %d\n", a, i, a * i);
 	};
 };
-// int fibo(){
+// int fibo()
+// {
 // 	int j;
-// 	int x=0;
-// 	int y=1;
+// 	int x = 0;
+// 	int y = 1;
 // 	int z;
-// 	printf("%d\t%d",x,y);
-// 	for(j=0; j<=20; j++){
-// 		z = x+y;
+// 	printf("%d\t%d", x, y);
+// 	for (j = 0; j <= 20; j++)
+// 	{
+// 		z = x + y;
 // 		x = y;
 // 		y = z;
 // 		printf("\t%d\n", z);

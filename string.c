@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main()
 {
     char str[100];
     int i, alpha = 0, space = 0, others = 0;
@@ -19,9 +19,9 @@ int main(int argc, char const *argv[])
         else
             others++;
     }
-    printf("\n%d", alpha);
-    printf("\n%d", space);
-    printf("\n%d", others);
+    printf("\nCount of alphabets: %d", alpha);
+    printf("\nCount of space: %d", space);
+    printf("\nCount of other characters: %d", others);
 
     return 0;
 }

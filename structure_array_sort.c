@@ -29,7 +29,7 @@ void displayOutput(student student)
 {
     printf("%s\n", student.name);
     printf("%d\n", student.total);
-    printf("%.2f\%\n", student.percentage);
+    printf("%.2f\n", student.percentage);
 }
 
 void sorter(student students[])

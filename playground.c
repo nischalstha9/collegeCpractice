@@ -1,39 +1,19 @@
-// #include <stdio.h>
-// void main()
-// {
-//     int number, i, flag = 0;
-//     printf("Enter a number:\n");
-//     scanf("%d", &number);
-//     for (i = 2; i <= number / 2; i++)
-//     {
-//         if (number % i == 0)
-//         {
-//             flag = 1;
-//             break;
-//         }
-//     }
-//     if (flag == 1)
-//     {
-//         printf("Not Prime");
-//     }
-//     else
-//     {
-//         printf("Prime");
-//     }
-// }
-
-#include <stdio.h>
-#include <string.h>
-
-int main()
+#include <graphics.h>
+#include <conio.h>
+void main()
 {
-    char a[20], rev[20];
-    scanf("%s", a);
-    int len = strlen(a);
-    int i;
-    for (i = 0; i <= len; i++)
-    {
-        rev[i] = a[len - i];
-    }
-    return 0;
+    intgd = DETECT, gm;
+    initgraph(&gd, &gm, "c:\\tc\\bgi");
+    setbkcolor(GREEN);
+    printf("\t\t\t\n\nLINE");
+    line(50, 40, 190, 40);
+    printf("\t\t\n\n\n\nRECTANGLE");
+    rectangle(125, 115, 215, 165);
+    printf("\t\t\t\n\n\n\n\n\n\nARC");
+    arc(120, 200, 180, 0, 30);
+    printf("\t\n\n\n\nCIRCLE");
+    circle(120, 270, 30);
+    printf("\t\n\n\n\nECLIPSE");
+    ellipse(120, 350, 0, 360, 30, 20);
+    getch();
 }
